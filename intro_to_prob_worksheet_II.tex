@@ -1,0 +1,93 @@
+
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{gensymb}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage{ulem}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{tabu}
+\usepackage{url}
+\usepackage{pgfplots}
+\usepgfplotslibrary{polar}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc}
+\usepackage{pgfplotstable}
+\usepgfplotslibrary{statistics}
+\pgfplotsset{width=12cm,compat=1.12}
+\usepackage{color}
+
+
+\pagestyle{empty} 
+\unframedsolutions
+\SolutionEmphasis{\color{blue}}
+
+
+\begin{document}
+
+\begin{center}\textbf{MA 105 Introduction to Probability Worksheet II}\end{center}
+
+\begin{bf}
+MA 105-03, Maj. Givler
+\end{bf}
+
+\vspace{.5 cm}
+
+\noindent
+{\bfseries Name:} \line(1,0){250}
+
+\noindent
+{\bfseries Directions:} Answer each question below. You must show all work in order to receive full credit. Carefully indicate your answer. You may work individually, with a partner, or in a small group; please indicate who you worked with. You may use your textbook or class notes as needed.
+
+\bracketedpoints
+\pointsinmargin
+\begin{questions}
+
+\question Use classical probability to calculate the probability of flipping two coins and having both land tails up.
+\vspace{\stretch{2}}
+
+\question What is the complement of the event described in the previous question?
+\vspace{\stretch{1}}
+
+
+\question Toss two coins 10 times and use relative frequencies to estimate the probability of getting two tails in a single toss. Does this exactly match your answer to the first question?
+\begin{solution}[\stretch{1}]
+Answers will vary
+\end{solution}
+
+
+\question Out of 3000 students, 1562 are male and 1448 are female. Is it unusual to have this many male students? Is it unlikely? Explain your reasoning.
+\begin{solution}[\stretch{1}]
+It is unusual to have this many male students (because the probability of getting exactly 156 males is small), but it is not unlikely (because we would expect around 150 males)
+\end{solution}
+
+\question In the last month, a mechanic worked on 56 cars with exhaust leaks and 32 cars without exhaust leaks. What is the probability of randomly selecting one of these cars and getting a car without an exhaust leak?
+\begin{solution}[\stretch{1}]
+P(no exhaust leak) = $\frac{32}{56+32}=\frac{32}{88}=0.36$
+\end{solution}
+
+\question Why do statisticians prefer working with probabilities rather than working with odds?
+\begin{solution}[\stretch{1}]
+Probabilities are easier to do calculations with.
+\end{solution}
+
+\newpage
+
+\question When Super Saver won the 136$^{th}$ Kentucky Derby, a \$2 bet on him resulted in a return of \$18.
+\begin{parts}
+\part What was the net profit of the bet?
+\vspace{\stretch{0.5}}
+\part Calculate the payoff odds.
+\vspace{\stretch{0.5}}
+\part If the probability of him winning was 0.093, what were the actual odds against him winning?
+\vspace{\stretch{0.5}}
+\end{parts}
+
+\question (from our book) In a New York Times/CBS News poll, respondents were asked if it should be legal or illegal to send a text message while driving. Eight said that it should be legal and 804 said that it should be illegal. What is the probability of randomly selecting somone who believes it should be legal to text while driving? Is it unlikely to randomly select someone with that belief?
+\vspace{\stretch{1}}
+
+\end{questions}
+\end{document}

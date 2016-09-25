@@ -1,0 +1,147 @@
+
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{gensymb}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage{ulem}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{tabu}
+\usepackage{url}
+\usepackage{pgfplots}
+\usepgfplotslibrary{polar}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc}
+\usepackage{pgfplotstable}
+\usepgfplotslibrary{statistics}
+\pgfplotsset{width=12cm,compat=1.12}
+\usepackage{color}
+
+
+\pagestyle{empty} 
+\unframedsolutions
+\SolutionEmphasis{\color{blue}}
+
+
+\begin{document}
+
+\begin{center}\textbf{MA 105 Addition Rule Worksheet}\end{center}
+
+\begin{bf}
+MA 105-03,04, Maj. Givler
+\end{bf}
+
+\vspace{.5 cm}
+
+\noindent
+{\bfseries Name:} \line(1,0){250}
+
+\noindent
+{\bfseries Directions:} Answer each question below. You must show all work in order to receive full credit. Carefully indicate your answer. You may work individually, with a partner, or in a small group; please indicate who you worked with. You may use your textbook or class notes as needed. Point values for each question are indicated in the margins.
+
+\bracketedpoints
+\pointsinmargin
+\begin{questions}
+\question[3] Determine if each of the following pairs of events is disjoint or not.
+
+\begin{parts}
+\part Randomly selecting a male, and randomly selecting a nurse
+\begin{solution}[\stretch{1}] not disjoint
+\end{solution}
+\part Randomly selecting a car from the assembly line and it's free of defects, and randomly selecting a car from the assembly line and the power windows don't work.
+\begin{solution}[\stretch{1}] disjoint
+\end{solution}
+\part A response on a voluntary survery from someone who has a cat, and a response on a voluntary survey from someone who has a dog.
+\begin{solution}[\stretch{1}] not disjoint
+\end{solution}
+\end{parts}
+
+\question[2]A certain group of people has a 0.56\% rate of red-green color blindness. If a person is randomly selected from that group, what is the probability that they are not red-green color blind?
+\begin{solution}[\stretch{1}] $1-0.0056 = 0.9944$
+\end{solution}
+
+\question[6] Use the table of results from 1000 pre-employment drug screening tests to answer the questions below.
+
+\begin{tabular} {|r|c|c|} \hline
+& {\bfseries Positive Test Result} & {\bfseries Negative Test Result} \\ \hline
+{\bfseries Subject uses drugs} & 99 & 8 \\ \hline
+{\bfseries Subject does not use drugs} & 82 & 811\\ \hline
+\end{tabular}
+
+\begin{parts}
+\part What is the probability of a person from this group having a positive test result?
+\begin{solution}[\stretch{1}] $\frac{99+82}{99+82+8+811} = \frac{181}{1000}= 0.181$
+\end{solution}
+\part What is the probability of a person from this group being a drug user?
+\begin{solution}[\stretch{1}] $\frac{99+8}{1000} = 0.107$
+\end{solution}
+\part What is the probability of a person from this group being a drug user or having a positive test result?
+\begin{solution}[\stretch{1}] $\frac{99+8+82}{1000} = 0.189$
+\end{solution}
+\part What is the probability of a false positive?
+\begin{solution}[\stretch{1}] $\frac{82}{1000} = 0.082$
+\end{solution}
+\part What is the probability of a person having a negative test result or not being a drug user?
+\begin{solution}[\stretch{1}] $\frac{8+811+82}{1000} = 0.901$
+\end{solution}
+\part Given that a person doesn't use drugs, what is the probability that they have a positive test result?
+\begin{solution}[\stretch{1}] $\frac{82}{82+811} = 0.092$
+\end{solution}
+\end{parts}
+
+\newpage
+\question[9] Use the given table of results about people who were included in a survey to answer each of the questions below.
+
+\begin{tabular}{|r|c|c|c|c|c|c|} \hline
+ & \multicolumn{6}{c|}{{\bfseries Age}} \\ \hline
+ & 18--21 & 22--29 & 30--39 & 40--49 & 50--59 & 60+ \\ \hline
+{\bfseries Responded} & 73 & 255 & 245 & 136 & 138 & 202 \\ \hline
+{\bfseries Refused} & 11 & 20 & 33 & 16 & 27 & 49\\ \hline
+\end{tabular}
+
+\begin{parts}
+\part What is the probability that a selected person refused to answer?
+\begin{solution}[\stretch{1}] $\frac{11+20+33+16+27+49}{11+20+33+16+27+49+73+255+245+136+138+202} = \frac{156}{1205} = 0.129$
+\end{solution}
+\part What is the probability that a selected person refused to answer or was 60 or older?
+\begin{solution}[\stretch{1}] $\frac{156+202}{1205} = 0.297$
+\end{solution}
+\part What is the probability that a selected person was in the 18--21 age range?
+\begin{solution}[\stretch{1}] $\frac{73+11}{1205} = 0.070$
+\end{solution}
+\part What is the probability that a selected person responded and was in the 22--29 age range?
+\begin{solution}[\stretch{1}] $\frac{255}{1205} = 0.212$
+\end{solution}
+\part What is the probability that a selected person was younger than 22 or was older than 59?
+\begin{solution}[\stretch{1}] $\frac{73+11+202+49}{1205} = 0.278$
+\end{solution}
+\part What is the probability that a selected person was younger than 22 or was older than 59 or refused to answer?
+\begin{solution}[\stretch{1}] $\frac{73+11+202+49+20+33+16+27}{1205} = 0.358$
+\end{solution}
+\part What is the probability that a person was younger than 22 and responded?
+\begin{solution}[\stretch{1}] $\frac{73}{1205} = 0.061$
+\end{solution}
+\part Given that a person is in the 30--39 age range, what is the probability that they refused to answer?
+\begin{solution}[\stretch{1}] $\frac{33}{33+245} = 0.119$
+\end{solution}
+\part Given that a person responded, what is the probability that they are 60 or older?
+\begin{solution}[\stretch{1}] $\frac{202}{73+255+245+136+138+202} = 0.193$
+\end{solution}
+\end{parts}
+
+\question[1] Complete the following statement.
+P(A or B) indicates \fillin{}.
+\begin{choices}
+\correctchoice the probability that in a single trial, event A occurs, event B occurs, or they both occur.
+\choice the probability that event A or event B does not occur in a single trial.
+\choice the probability that event A occurs in one trial followed by event B in another trial.
+\choice the probability that A and B both occur in the same trial.
+\end{choices}
+
+
+
+\end{questions}
+\end{document}
