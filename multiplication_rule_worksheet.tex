@@ -1,0 +1,140 @@
+
+
+\documentclass[addpoints]{exam}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{gensymb}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage{ulem}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{tabu}
+\usepackage{url}
+\usepackage{pgfplots}
+\usepgfplotslibrary{polar}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc}
+\usepackage{pgfplotstable}
+\usepgfplotslibrary{statistics}
+\pgfplotsset{width=12cm,compat=1.12}
+\usepackage{color}
+
+
+\pagestyle{empty} 
+\unframedsolutions
+\SolutionEmphasis{\color{blue}}
+
+
+\begin{document}
+
+\begin{center}\textbf{MA 105 Multiplication Rule Worksheet}\end{center}
+
+\noindent
+{\bfseries Directions:} Answer each question below. You must show all work in order to receive full credit. Carefully indicate your answer. You may work individually, with a partner, or in a small group; please indicate who you worked with. You may use your textbook or class notes as needed. 
+
+\bracketedpoints
+\pointsinmargin
+\begin{questions}
+
+\question Determine whether events A and B are independent or dependent and explain your reasoning.
+\begin{parts}
+\part A: When a page is ripped out of a book and it's page 5.\\
+B: When another page is ripped out of a book and it's page 80.
+\begin{solution}[\stretch{2}] dependent \end{solution}
+\part A: When a baby is born and it's a girl.\\
+B: When a second baby is born and it's a boy.
+\begin{solution}[\stretch{2}] independent \end{solution}
+\part A: When a die is rolled and the outcome is a 5.\\
+B: When a die is rolled and the outcome is a 6.
+\begin{solution}[\stretch{2}] independent \end{solution}
+\part A: When a yellow M\&M is pulled out of a bag and eaten.\\
+B: When a red M\&M is pulled out of the same bag and eaten.
+\begin{solution}[\stretch{2}] dependent \end{solution}
+\end{parts}
+
+\question A standard deck of 52 playing cards contains four suits of cards (clubs, diamonds, spades, and hearts) with an ace, king, queen, jack, 10, 9, 8, 7, 6, 5, 4, 3, and 2 of each suit. Calculate each of the following probabilities, assuming the cards are selected \emph{without} replacement.
+
+\begin{parts}
+%\part Drawing a king of any suit and a 2 of hearts when 2 cards are drawn.
+%\begin{solution}[\stretch{1}] $\displaystyle \frac{4}{52} \times \frac{1}{51}= 0.00151$
+%\end{solution}
+\part Drawing all four queens (drawing one queen of each suit) when 4 cards are drawn.
+\begin{solution}[\stretch{1}] $\displaystyle \frac{4}{52} \times \frac{3}{51} \times \frac{2}{50} \times \frac{1}{49} = 0.00000369$
+\end{solution}
+\part Drawing an ace of spades and an ace of hearts when 2 cards are drawn.
+\begin{solution}[\stretch{1}] $\displaystyle \frac{1}{52} \times \frac{1}{51}= 0.000377$
+\end{solution}
+\part Drawing an ace, king, and queen of diamonds when 3 cards are drawn.
+\begin{solution}[\stretch{1}] $\displaystyle \frac{1}{52} \times \frac{1}{51} \times \frac{1}{50}= 0.00000754$
+\end{solution}
+\part Drawing a 2, 3, 4, and 5 of spades when 4 cards are drawn.
+\begin{solution}[\stretch{1}] $\displaystyle \frac{1}{52} \times \frac{1}{51} \times \frac{1}{50} \times \frac{1}{49}= 0.000000154$
+\end{solution}
+\end{parts}
+
+\question A standard deck of 52 playing cards contains four suits of cards (clubs, diamonds, spades, and hearts) with an ace, king, queen, jack, 10, 9, 8, 7, 6, 5, 4, 3, and 2 of each suit. Calculate each of the following probabilities, assuming the cards are selected \emph{with} replacement.
+
+\begin{parts}
+%\part Drawing a king of any suit and a 2 of hearts when 2 cards are drawn.
+%\begin{solution}[\stretch{1}] $\displaystyle \frac{4}{52} \times \frac{1}{52}= 0.00148$
+%\end{solution}
+\part Drawing all four queens (drawing one queen of each suit) when 4 cards are drawn.
+\begin{solution}[\stretch{1}] $\displaystyle \frac{4}{52} \times \frac{3}{52} \times \frac{2}{52} \times \frac{1}{52} = 0.00000328$
+\end{solution}
+\part Drawing an ace of spades and an ace of hearts when 2 cards are drawn.
+\begin{solution}[\stretch{1}] $\displaystyle \frac{1}{52} \times \frac{1}{52}= 0.000370$
+\end{solution}
+\part Drawing an ace, king, and queen of diamonds when 3 cards are drawn.
+\begin{solution}[\stretch{1}] $\displaystyle \frac{1}{52} \times \frac{1}{52} \times \frac{1}{52}= 0.00000711$
+\end{solution}
+\part Drawing a 2, 3, 4, and 5 of spades when 4 cards are drawn.
+\begin{solution} $\displaystyle \frac{1}{52} \times \frac{1}{52} \times \frac{1}{52} \times \frac{1}{52}= 0.000000137$
+\end{solution}
+\end{parts}
+\newpage
+
+\question A quiz has 5 multiple choice questions, each with 4 choices. What is the probability of getting all 5 questions correct by guessing?
+\begin{solution}[1cm] $\displaystyle \bigg( \frac{1}{4} \bigg)^5=0.000977$ \end{solution}
+
+\question Ignoring leap years and assuming births on the 365 days of the year are equally likely, calculate the following probabilities.
+\begin{parts}
+\part What is the probability that a randomly selected person was born on 3 October? \begin{solution}[1cm] $\displaystyle \frac{1}{365} = 0.00274 $ \end{solution}
+\part What is the probability that two randomly selected people were both born on 3 October?
+\begin{solution}[1cm] $\displaystyle \frac{1}{365} \times \frac{1}{365} = 0.000000751$ \end{solution}
+\part What is the probability that two randomly selected people were born on the same day?
+\begin{solution}[1cm] $\displaystyle 1 \times \frac{1}{365} = 0.00274$ \end{solution}
+\end{parts}
+
+\question This question is copied from our textbook (4.4, \#19). It is generally recognized that it is wise to back up computer data. Assume that there is a 2\% rate of disk drive failure in a year (based on data from various sources, including ``Failure Trends in Large Disk Drive Population," by Pinhero et al. of Google, Inc.).
+\begin{parts}
+\part If you store all your computer data on a single hard disk drive, what is the probability that the drive will fail during a year? (do not answer in terms of \%)
+\begin{solution}[1cm] $0.02$ \end{solution}
+\part If all of your computer data is stored on a hard disk drive with a copy stored on a second hard disk drive, what is the probability that both drives will fail during a year?
+\begin{solution}[1cm] $0.02^2 = 0.0004$ \end{solution}
+\part If copies of all of your computer data are stored on three independent hard disk drives, what is the probability that all three will fail during a year?
+\begin{solution}[1cm] $0.000008$ \end{solution}
+\end{parts}
+
+\question Answer each part based on the following table.
+
+\begin{tabular}{|l|c|c|} \hline
+ & {\bfseries Positive Test Result} & {\bfseries Negative Test Result} \\ \hline
+{\bfseries Subject Uses Drugs} & 44 & 6\\ \hline
+{\bfseries Subject Doesn't Use Drugs} & 90 & 860 \\ \hline
+\end{tabular}
+\begin{parts}
+\part What is the probability of a false positive?
+\begin{solution}[1cm] $\displaystyle \frac{90}{1000}=0.09$ \end{solution}
+\part What is the probability of randomly selecting 2 people and they both have false positive results? Assume the selection is done with replacement.
+\begin{solution}[1cm] $0.09^2=0.0081$ \end{solution}
+\part What is the probability of randomly selecting 2 people and they both have false negative results? Assume the selection is done without replacement.
+\begin{solution}[.5cm] $\displaystyle \frac{6}{1000} \times \frac{5}{999} = 0.000030$ \end{solution}
+\end{parts}
+
+
+
+
+
+\end{questions}
+\end{document}
